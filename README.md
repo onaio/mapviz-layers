@@ -1,1 +1,3 @@
-# mapviz-layers
+# Mapviz Layers
+
+Public mapviz layers for Gisida!
