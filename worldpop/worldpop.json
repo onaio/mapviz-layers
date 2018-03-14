@@ -3,8 +3,8 @@
   "category": "Infrastructure",
   "source": {
     "type": "vector",
-    "layer": "ugpop",
-    "url": "mapbox://ona.9i3wgx89"
+    "layer": "sompop2015pppadj",
+    "url": "mapbox://ona.41ot0ihd"
   },
   "type": "fill",
   "no-outline": true,
