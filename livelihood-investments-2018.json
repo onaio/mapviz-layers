@@ -1,0 +1,69 @@
+{
+	"label": "% of people reached through livelihood investment & asset activities per month",
+	"source": {
+		"type": "vector",
+		"data": "data/livelihood_investments_2018.csv",
+		"layer": "somalia_new_regions-3ebh53",
+		"url": "mapbox://ona.14zwi7x3",
+		"join": [
+			"osm_id",
+			"region_id"
+		]
+	},
+	"type": "fill",
+	"property": "percent_target",
+	"categories": {
+		"breaks": "yes",
+		"color": "RdYlGn",
+		"clusters": 5
+	},
+	"aggregate": {
+		"timeseries": {
+			"field": "period"
+		}
+	},
+	"labels": {
+		"data": "data/som_region_labels.csv",
+		"label": "<p style=text-align:center;><b>{{percent_target}}% </b> <br> of </br> {{target}}</p>",
+		"join": [
+			"osm_id",
+			"region_id"
+		],
+		"coordinates": [
+			"longitude",
+			"latitude"
+		],
+		"minzoom": 4.5,
+		"height": 30,
+		"width": 30,
+		"offset": [
+			-18,
+			10
+		]
+	},
+	"popup": {
+		"header": "region",
+		"body": "{{value}} people reached"
+	},
+	"charts": {
+		"pie": {
+			"type": "breaks",
+			"percentSuffix": true,
+			"level": "region",
+			"column": "percent_target"
+		},
+		"primary": {
+			"type": "column",
+			"spec": {
+				"type": "percent",
+				"percentSuffix": true,
+				"level": "region",
+				"column": "percent_target",
+				"y-axis-label": "% reached"
+			}
+		}
+	},
+	"visible": false,
+	"credit": "Percentage of people reached through livelihood investment and asset activities per month <br> Updated: March 13th, 2018",
+	"category": "Food Security Cluster"
+}
