@@ -22,25 +22,6 @@
 			"field": "period"
 		}
 	},
-	"labels": {
-		"data": "data/som_region_labels.csv",
-		"label": "<p style=text-align:center;><b>{{percent_target}}% </b> <br> of </br> {{target}}</p>",
-		"join": [
-			"osm_id",
-			"region_id"
-		],
-		"coordinates": [
-			"longitude",
-			"latitude"
-		],
-		"minzoom": 4.5,
-		"height": 30,
-		"width": 30,
-		"offset": [
-			-18,
-			10
-		]
-	},
 	"popup": {
 		"header": "region",
 		"body": "{{value}} people reached"
