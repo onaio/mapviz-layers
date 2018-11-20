@@ -2,7 +2,7 @@
 	"label": "% of people reached through livelihood investment & asset activities per month",
 	"source": {
 		"type": "vector",
-		"data": "https://github.com/onaio/mapviz-layers/raw/master/lib/data/livelihood_investments_2018.csv",
+		"data": "https://raw.githubusercontent.com/onaio/mapviz-layers/master/lib/data/livelihood_investments_2018.csv",
 		"layer": "somalia_new_regions-3ebh53",
 		"url": "mapbox://ona.14zwi7x3",
 		"join": [
