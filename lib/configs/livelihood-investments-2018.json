@@ -1,0 +1,8 @@
+{
+    "APP": {
+        "country-code": "SO"
+    },
+    "LAYERS": [
+        "https://raw.githubusercontent.com/onaio/mapviz-layers/master/livelihood-investments-2018.json"
+    ]
+}
