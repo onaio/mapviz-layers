@@ -1,0 +1,26 @@
+{
+    "label": "IPC (Rural, Urban and IDP) 2017 - June 2018, Most Likely Scenario",
+    "source": {
+      "type": "vector",
+      "data": "data/ipc_series/ipc_timeseries_projections.csv",
+      "layer": "ipc_timeseries-cjrgdy",
+      "url": "mapbox://ona.1e00ed4c",
+      "join": ["id", "id"]
+    },
+    "type": "fill",
+    "property": "Phase",
+    "categories": {
+      "breaks": "no",
+      "limit": ["1", "2", "3", "4", "5"],
+      "color": ["#9acd32", "#ffdc00", "#ff851b", "#ff4136", "transparent"],
+      "label": ["Minimal", "Stressed", "Critical", "Emergency"]
+    },
+    "aggregate": {
+      "timeseries": {
+        "field": "period"
+      }
+    },
+
+    "visible": false,
+    "credit": "FSNAU ",
+ }
